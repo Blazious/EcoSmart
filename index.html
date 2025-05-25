@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSmart - Turning Waste into Power</title>
+    <!-- Font Awesome CDN -->
+     <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Enhanced Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                EcoSmart
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#process"><i class="fas fa-cogs"></i> Process</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#support"><i class="fas fa-headset"></i> Support</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 
+    <div class="analytics-bar">
+        <div class="container">
+            <div class="analytics-content">
+                <div class="analytics-item">
+                    <span class="analytics-number" id="liveVisitors">1,247</span>
+                    <span class="analytics-label">Live Visitors</span>
+                </div>
+                <div class="analytics-item">
+                    <span class="analytics-number" id="todayQuotes">89</span>
+                    <span class="analytics-label">Quotes Today</span>
+                </div>
+                <div class="analytics-item">
+                    <span class="analytics-number" id="activeSessions">156</span>
+                    <span class="analytics-label">Active Sessions</span>
+                </div>
+                <div class="analytics-item">
+                    <span class="analytics-number" id="conversionRate">12.3%</span>
+                    <span class="analytics-label">Conversion Rate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero">
+         <!-- Background Video -->
+         <video autoplay muted loop playsinline class="hero-bg-video">
+           <source src="factory.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+         </video>
+           <!-- Foreground Content -->
+        <div class="hero-content">
+            <h1>Turning Waste into Power</h1>
+            <p class="hero-subtitle">Converting agricultural waste into sustainable industrial charcoal briquettes for a cleaner, greener tomorrow</p>
+            <div class="hero-buttons">
+                <button class="cta-button" onclick="scrollToSection('contact')">
+                    <i class="fas fa-rocket"></i>
+                    Get a Quote
+                </button>
+                <button class="cta-button cta-secondary" onclick="scrollToSection('about')">
+                    <i class="fas fa-play"></i>
+                    Watch Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-subtitle">Revolutionizing waste management through innovative green energy solutions that benefit both planet and profit</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At EcoChar, we're transforming how industries think about waste and energy. Our <span class="about-highlight">innovative process</span> converts agricultural waste like wheat chaff into high-quality industrial charcoal briquettes, creating a sustainable cycle that benefits both the environment and your bottom line.</p>
+                    <br>
+                    <p>We believe that every ton of waste is an opportunity to create <span class="about-highlight">clean energy</span>, reduce environmental impact, and build a more sustainable future for generations to come. Our cutting-edge technology processes over 500 tons of waste monthly, serving 50+ industries worldwide.</p>
+                    <br>
+                    <p>Join the <span class="about-highlight">green revolution</span> and discover how your waste can become your most valuable resource.</p>
+                </div>
+                <div class="about-images">
+                    <div class="about-image"></div>
+                    <div class="about-image"></div>
+                    <div class="about-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Process Section -->
+    <section id="process" class="how-it-works section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Our revolutionary three-step process transforms waste into valuable energy with cutting-edge technology</p>
+            <div class="process-timeline">
+                <div class="process-line"></div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Smart Collection</h3>
+                    <p>We collect agricultural waste like wheat chaff, rice husks, and other biomass materials directly from farms using our optimized logistics network and  transport  systems.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Advanced Conversion</h3>
+                    <p>Using state-of-the-art pyrolysis technology and controlled heating, we convert organic waste into premium charcoal briquettes with 99% efficiency and zero emissions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Distribution</h3>
+                    <p>Our finished charcoal briquettes are quality-tested, packaged in eco-friendly materials, and distributed through our distribution network within 48 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Features Section -->
+    <section class="features section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Revolutionary Benefits</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Why industry leaders choose our next-generation eco-friendly charcoal briquettes</p>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cost-Effective</h3>
+                    <p>Save 30-40% on fuel costs compared to traditional fossil fuels while maintaining superior energy output and consistent performance across all applications.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>100% Eco-Friendly</h3>
+                    <p>Completely carbon-neutral fuel source that reduces greenhouse gas emissions by 75% and eliminates agricultural waste accumulation in landfills.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Long-Lasting Energy</h3>
+                    <p>Ultra-high calorific value ensures 3x longer burn time with consistent heat output, perfect for industrial furnaces and power generation.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>ISO-certified production process guarantees consistent quality, low ash content, and meets all international industrial fuel standards.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Supply</h3>
+                    <p>Guaranteed continuous supply with flexible delivery schedules, emergency stock reserves, and real-time inventory tracking systems.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partnership Support</h3>
+                    <p>Dedicated account managers, technical support, custom solutions, and long-term contracts with price protection guarantees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Impact Stats -->
+    <section class="impact section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Global Impact</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Making a measurable difference across industries and continents</p>
+            <div class="stats-grid">
+                <div class="stat">
+                    <span class="stat-icon">🌍</span>
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">Tons of Waste Recycled Monthly</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">🏭</span>
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Industries Served Globally</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">📉</span>
+                    <div class="stat-number">75%</div>
+                    <div class="stat-label">CO₂ Emission Reduction</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">⚡</span>
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Technical Support</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">🚚</span>
+                    <div class="stat-number">48hr</div>
+                    <div class="stat-label">Delivery Guarantee</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">🎯</span>
+                    <div class="stat-number">99.2%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section id="blog" class="blog-preview section">
+        <div class="container">
+            <h2 class="section-title">Latest Insights 💡</h2>
+            <p class="section-subtitle">Stay updated with the latest trends in sustainable energy and waste management</p>
+            <div class="blog-grid">
+               <div class="blog-card">
+                <!--first watch content -->
+    <div class="blog-video">
+        <iframe width="100%" height="200" 
+            src="https://www.youtube.com/embed/VjOdO3wTnlQ" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    <div class="blog-content">
+        <div class="blog-meta">
+            <i class="fas fa-calendar"></i> May 25, 2025 • 5 min watch
+        </div>
+        <h3 class="blog-title">How Waste-to-Energy Powers Industries Sustainably</h3>
+        <p>Explore how converting biomass waste into energy is not just sustainable but also commercially viable...</p>
+    </div>
+</div>
+  <!--second  watch content -->
+        <a href="https://www.sciencedirect.com/science/article/pii/S2215016124005260" target="_blank" class="blog-link" style="text-decoration: none; color: inherit;">
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('blog2image.jpg');"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <i class="fas fa-calendar"></i> March 12, 2024 • 7 min read
+                        </div>
+                        <h3 class="blog-title">Ranking Biomass for Charcoal : A smarter Evaluation Approach</h3>
+                        <p>
+                           This study explores a dual-model technique (DEAV-BWM) to evaluate different biomass materials for charcoal briquette production. It highlights how structured analysis can lead to smarter material choices in sustainable energy solutions...
+                        </p>
+                    </div>
+                </div>
+        </a>        
+              <!--Third  watch content --> 
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0956053X25001576" target="_blank" class="blog-link" style="text-decoration: none; color: inherit;">
+             <div  class="blog-card">
+                <div class="blog-image" style="background-image: url('blog3image.jpg');"></div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                       <i class="fas fa-calendar"></i> June 25, 2025 • 6 min read
+                    </div>
+                    <h3 class="blog-title">Turning Biomass Into Power: A Game Changer for Heavy Industry</h3>
+                    <p>Gasification is emerging as a top solution to industrial emissions. Learn how companies are using waste to fuel operations while cutting their carbon output dramatically...</p>
+               </div>
+             </div>  
+        </a>  
+</div>
+ 
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get Started Today</h2>
+            <p class="section-subtitle">Ready to transform your energy strategy? Our experts are here to help you make the switch to sustainable power</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 2rem; color: #2f855a;"> Connect with Us<i class="fas fa-user-tie icon-spacing"></i></h3>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+254705921268" class="no-underline"> Call us on mobile </a></p>
+                            <small>Monday - Friday, 8AM - 6PM EST</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                             <p><a href="mailto:blaziousmwambuwa@gmail.com" class="no-underline"> sales@ecosmart.com</a></p>
+                            <small>Response within 2 hours</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p> <a href="https://maps.app.goo.gl/aq1FuL6i3fSXBqZR9?g_st=aw" target="_blank" class="no-underline">
+                                   Bamburi <br>Mombasa, Kenya
+                               </a>
+                            </p>
+                            <small>Appointments available</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp Support</h4>
+                            <p>  <a href="https://wa.me/254792177472" target="_blank" style="color: inherit; text-decoration: none;">
+                                    24/7 Technical Assistance
+                                 </a>
+                            </p>
+                            <small>Chat with us</small>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <h3 style="margin-bottom: 2rem; color: #2f855a;">Request Your Free Quote</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name *</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="industry">Industry</label>
+                            <select id="industry" name="industry">
+                                <option value="">Select Industry</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="steel">Steel & Metal</option>
+                                <option value="cement">Cement</option>
+                                <option value="textile">Textile</option>
+                                <option value="chemical">Chemical</option>
+                                <option value="food">Food Processing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="volume">Monthly Energy Needs</label>
+                            <select id="volume" name="volume">
+                                <option value="">Select Volume</option>
+                                <option value="small">< 50 tons</option>
+                                <option value="medium">50-200 tons</option>
+                                <option value="large">200-500 tons</option>
+                                <option value="enterprise">500+ tons</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your energy requirements, current fuel usage, and timeline for implementation..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Quote Request
+                    </button>
+                    <p style="font-size: 0.9rem; color: #718096; margin-top: 1rem; text-align: center;">
+                        Our energy specialists will contact you within 2 hours with a customized solution.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="section" style="background: #f7fafc;">
+        <div class="container">
+            <h2 class="section-title">24/7 Support Center</h2>
+            <p class="section-subtitle">Need help? Our expert support team is available around the clock</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(45deg, #38a169, #2f855a); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>Get instant help with installation, maintenance, and troubleshooting from our certified engineers.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(45deg, #d69e2e, #b7791f); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem;">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Training Programs</h3>
+                    <p>Comprehensive training for your team on optimal usage, safety protocols, and efficiency maximization.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(45deg, #805ad5, #6b46c1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem;">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance Services</h3>
+                    <p>Preventive maintenance plans and on-site service to ensure maximum uptime and performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-leaf"></i> EcoSmart</h3>
+                    <p>Leading the renewable energy revolution by transforming agricultural waste into sustainable industrial fuel solutions.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://www.linkedin.com/in/blazious-mwambuwa-9303a0199/" style="color: #68d391; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/BlaziousMwambu2?t=8V74cvPN0Rk59qO1860R9w&s=09" style="color: #68d391; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-times"></i></a>
+                        <a href="#" style="color: #68d391; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/creativitae_?igsh=OHhrZGk5ZWkxNGIx" style="color: #68d391; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Waste Collection</a></li>
+                        <li><a href="#">Charcoal Production</a></li>
+                        <li><a href="#">Industrial Supply</a></li>
+                        <li><a href="#">Custom Solutions</a></li>
+                        <li><a href="#">Consulting Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#support">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Emergency Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoSmart Industries. All rights reserved. | Turning waste into sustainable power since 2024.</p>
+                <p style="margin-top: 0.5rem;">
+                    <a href="#" style="color: #68d391; margin: 0 1rem;">Privacy Policy</a>
+                    <a href="#" style="color: #68d391; margin: 0 1rem;">Terms of Service</a>
+                    <a href="#" style="color: #68d391; margin: 0 1rem;">Cookie Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+
+
+</body>
+</html>
