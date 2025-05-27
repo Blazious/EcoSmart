@@ -101,7 +101,7 @@ async function handleSubmit(event) {
 
     try {
         // Make API call
-        const response = await fetch('http://127.0.0.1:8000/api/quotes/', {
+        const response = await fetch('https://celebrated-fulfillment-production.up.railway.app/api/quotes/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -372,7 +372,7 @@ window.addEventListener('offline', () => {
 // Initialize application
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🌱 EcoSmart: Application initialized successfully');
-    console.log('📊 API endpoint configured: http://127.0.0.1:8000/api/quotes/');
+    console.log('📊 API endpoint configured: https://celebrated-fulfillment-production.up.railway.app/api/quotes/');
     console.log('🔗 Form submission ready with real API integration');
     
     // Check if form exists and add additional validation
